@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>光兮隐私政策</title>
+    <style>
+        :root {
+            --background: #0b0b0f;
+            --panel: #15151b;
+            --text: #f5f5f7;
+            --muted: #b8b8c2;
+            --accent: #d6b36a;
+            --line: #30303a;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            background: var(--background);
+            color: var(--text);
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.65;
+        }
+
+        .page {
+            width: min(880px, calc(100% - 32px));
+            margin: 0 auto;
+            padding: 32px 0 56px;
+        }
+
+        header {
+            border-bottom: 1px solid var(--line);
+            padding-bottom: 24px;
+            margin-bottom: 36px;
+        }
+
+        .topbar, nav, .language {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 14px;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .brand {
+            margin: 0;
+            font-size: clamp(2rem, 5vw, 3.4rem);
+            font-weight: 650;
+            letter-spacing: 0;
+        }
+
+        .tagline {
+            margin: 8px 0 0;
+            color: var(--muted);
+            font-size: 1.05rem;
+        }
+
+        nav {
+            justify-content: flex-start;
+            margin-top: 22px;
+        }
+
+        a {
+            color: var(--accent);
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        nav a, .language a {
+            border: 1px solid var(--line);
+            border-radius: 8px;
+            padding: 8px 12px;
+            background: var(--panel);
+        }
+
+        main {
+            display: grid;
+            gap: 24px;
+        }
+
+        section {
+            border: 1px solid var(--line);
+            border-radius: 8px;
+            background: var(--panel);
+            padding: 24px;
+        }
+
+        h2 {
+            margin: 0 0 12px;
+            color: var(--accent);
+            font-size: 1.35rem;
+        }
+
+        p, ul {
+            margin: 0 0 14px;
+        }
+
+        ul {
+            padding-left: 22px;
+        }
+
+        footer {
+            color: var(--muted);
+            font-size: 0.9rem;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+    <div class="page">
+        <header>
+            <div class="topbar">
+                <div>
+                    <h1 class="brand">光兮</h1>
+                    <p class="tagline">NewTree Tech 的光兮隐私政策。</p>
+                </div>
+                <div class="language" aria-label="语言切换">
+                    <a href="../en/privacy.html">English</a>
+                    <a href="../zh-Hant/privacy.html">繁體中文</a>
+                </div>
+            </div>
+            <nav aria-label="网站导航">
+                <a href="index.html">支持与帮助</a>
+                <a href="terms.html">使用条款</a>
+                <a href="privacy.html">隐私政策</a>
+            </nav>
+        </header>
+
+        <main>
+            <section>
+                <h2>隐私政策</h2>
+                <p>光兮不会收集、存储或向我们的服务器传输您的照片、视频或个人信息。相机预览、LUT 渲染、拍摄和导出均在您的设备本地处理。</p>
+                <p>我们使用标准的 Apple API（如 UserDefaults）在您设备本地存储应用偏好设置。</p>
+            </section>
+
+            <section>
+                <h2>订阅</h2>
+                <p>当您购买 Luminessa Pro 时，Apple 会处理付款，RevenueCat 会验证订阅状态，以便 App 解锁 Pro 功能。</p>
+                <p>我们不会将您的照片、视频、相机画面或位置标记发送给 RevenueCat。</p>
+            </section>
+
+            <section>
+                <h2>权限说明</h2>
+                <ul>
+                    <li><strong>相机：</strong>用于拍摄照片和录制视频。</li>
+                    <li><strong>麦克风：</strong>仅在您录制带声音的视频时使用。</li>
+                    <li><strong>位置：</strong>仅在您开启照片位置标记时使用。</li>
+                    <li><strong>相册：</strong>用于将拍摄和导出的作品保存到您的设备。</li>
+                </ul>
+                <p>如果您对本隐私政策有任何疑问，请联系 <a href="mailto:support@luminessa-app.newtree.tech">support@luminessa-app.newtree.tech</a>。</p>
+            </section>
+        </main>
+
+        <footer>
+            &copy; 2024 NewTree Tech. 保留所有权利。
+        </footer>
+    </div>
+</body>
+</html>
